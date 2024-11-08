@@ -148,6 +148,7 @@
                     <option value="all">Tất cả</option>
                     <option value="loai1">Chay</option>
                     <option value="loai2">Mặn</option>
+                    <option value="loai3">Mặn 2</option>
                   </select>
                 </div>
               </div>
@@ -168,9 +169,7 @@
                   <th></th>
                 </tr>
               </thead>
-              <tbody id="tbodyFood">
-               
-              </tbody>
+              <tbody id="tbodyFood"></tbody>
             </table>
           </div>
         </main>
@@ -202,6 +201,7 @@
               class="close"
               data-dismiss="modal"
               aria-label="Close"
+              id="icon-close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
@@ -310,10 +310,16 @@
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
+              id="btn-close"
             >
               Close
             </button>
-            <button type="button" class="btn btn-warning" id="btnCapNhat">
+            <button
+              type="button"
+              class="btn btn-warning"
+              id="btnCapNhat"
+              data-dismiss="modal"
+            >
               Cập Nhật
             </button>
             <button
@@ -328,12 +334,17 @@
         </div>
       </div>
     </div>
+    
     <script src="../../assets/lib/js/Jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="../../assets/lib/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script type="module" src="../controllers/v2/main-v2.js"></script>
 
+
+
+    <!--  -->
+    <script src="../../assets/js/utils/index.js"></script>
     <script src="../../assets/js/food-list.js"></script>
   </body>
 </html>
